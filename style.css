@@ -1,0 +1,64 @@
+/* 스무스 스크롤 효과 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 네비게이션 전체 */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+/* 환영 문구 */
+#welcome-text {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: white;
+}
+
+/* 네비게이션 링크 영역 */
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex; /* 가로 배치 */
+  justify-content: center; /* 중앙 정렬 */
+  gap: 20px; /* 항목 간격 */
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* 본문이 navbar에 가려지지 않도록 */
+body {
+  padding-top: 100px; /* navbar 높이만큼 여백 */
+  font-family: "Noto Sans KR", "맑은 고딕", sans-serif;
+  line-height: 1.6;
+}
+
+/* 섹션 스타일 */
+section {
+  margin: 60px auto;
+  max-width: 800px;
+  padding: 20px;
+}
