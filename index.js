@@ -18,3 +18,17 @@ scrollTopBtn.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+const emailIcon = document.getElementById("email");
+const tooltip = document.getElementById("email-tooltip");
+const EMAIL = "luciok1203@snu.ac.kr";
+
+emailIcon.addEventListener("click", async () => {
+  try {
+    await navigator.clipboard.writeText(EMAIL);
+  } catch (err) {
+    console.error("복사 실패:", err);
+  }
+  tooltip.classList.add("show");
+  setTimeout(() => tooltip.classList.remove("show"), 1000); // 1초 뒤 숨김
+});

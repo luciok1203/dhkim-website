@@ -5,20 +5,21 @@ html {
 
 /* 네비게이션 전체 */
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
-  width: 100%;
-  background: #333;
+  min-width: 800px;
+  height: 140px;
+  background: #343435;
   color: white;
   text-align: center;
   padding: 10px 0;
   z-index: 1000;
 }
 
-/* 환영 문구 */
-#welcome-text {
-  font-size: 20px;
+/* 로고 */
+#logo {
+  font-size: 40px;
   font-weight: bold;
   margin-bottom: 8px;
   color: white;
@@ -32,7 +33,7 @@ html {
 
   display: flex; /* 가로 배치 */
   justify-content: center; /* 중앙 정렬 */
-  gap: 20px; /* 항목 간격 */
+  gap: 40px; /* 항목 간격 */
 }
 
 .nav-links li {
@@ -40,28 +41,81 @@ html {
 }
 
 .nav-links a {
+  font-size: 20px;
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  transition: color 0.5s;
 }
 
 .nav-links a:hover {
-  text-decoration: underline;
+  color: #8affff;
 }
 
-/* 본문이 navbar에 가려지지 않도록 */
 body {
-  padding-top: 100px; /* navbar 높이만큼 여백 */
   font-family: "Noto Sans KR", "맑은 고딕", sans-serif;
   line-height: 1.6;
 }
-
-/* 섹션 스타일 */
-section {
-  margin: 60px auto;
+main {
   max-width: 800px;
-  padding: 20px;
+  margin: 0px auto;
 }
+section {
+  padding: 20px;
+  scroll-margin-top: 140px; /* navbar 높이만큼 */
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+#introduction {
+  margin-top: 0px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #836fff;
+}
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+p {
+  font-size: 20px;
+}
+
+.icon-row {
+  display: inline-flex;
+  font-size: 30px;
+  gap: 15px;
+}
+
+.hover-up {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.hover-up:hover {
+  transform: translateY(-5px);
+}
+
+/* Tooltip text
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 0px 5px;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below!
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+*/
 
 /* 플로팅 버튼 기본 스타일 */
 #scrollTopBtn {
@@ -89,4 +143,112 @@ section {
 /* 스크롤할 때 보이게 */
 #scrollTopBtn.show {
   opacity: 1;
+}
+
+/*
+---------------------------------------
+hover effect 24
+---------------------------------------
+*/
+
+.SMN_effect-24 a {
+  padding: 10px 20px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.SMN_effect-24 a span:before {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-top: 2px solid #836fff;
+  border-left: 2px solid #836fff;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.SMN_effect-24 a span:after {
+  width: 6px;
+  height: 6px;
+  background: transparent;
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-right: 2px solid #836fff;
+  border-bottom: 2px solid #836fff;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.SMN_effect-24 a:before {
+  width: 6px;
+  height: 6px;
+  background: transparent;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-right: 2px solid #836fff;
+  border-top: 2px solid #836fff;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.SMN_effect-24 a:after {
+  width: 6px;
+  height: 6px;
+  background: transparent;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-left: 2px solid #836fff;
+  border-bottom: 2px solid #836fff;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.SMN_effect-24 a:hover {
+  color: #836fff;
+}
+
+.SMN_effect-24 a:hover:before {
+  opacity: 1;
+  right: 5px;
+  top: 5px;
+}
+
+.SMN_effect-24 a:hover:after {
+  opacity: 1;
+  left: 5px;
+  bottom: 5px;
+}
+
+.SMN_effect-24 a:hover span:before {
+  opacity: 1;
+  left: 5px;
+  top: 5px;
+}
+
+.SMN_effect-24 a:hover span:after {
+  opacity: 1;
+  right: 5px;
+  bottom: 5px;
 }

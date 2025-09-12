@@ -5,60 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>DHKim's Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>김동현의 웹페이지</title>
   </head>
   <body>
     <!-- 네비게이션 바 -->
     <nav class="navbar">
-      <div id="welcome-text">환영합니다!</div>
-      <ul class="nav-links">
-        <li><a href="#club">동아리</a></li>
-        <li><a href="#hobby">취미</a></li>
-        <li><a href="#favorites">좋아하는 것들</a></li>
-        <li><a href="#career">진로</a></li>
+      <div id="logo">김동현의 웹페이지</div>
+      <ul class="nav-links SMN_effect-24">
+        <li>
+          <a href="#introduction"><span>소개</span></a>
+        </li>
+        <li>
+          <a href="#club"><span>동아리</span></a>
+        </li>
+        <li>
+          <a href="#hobby"><span>취미</span></a>
+        </li>
+        <li>
+          <a href="#favorites"><span>취향</span></a>
+        </li>
+        <li>
+          <a href="#career"><span>진로 및 관심사</span></a>
+        </li>
       </ul>
     </nav>
-
-    <!-- 헤더 -->
-    <header id="top">
-      <h1>김동현 Donghyun Kim</h1>
-      <p>서울대학교 전기·정보공학부 25학번</p>
-      <p>Instagram : @ehdgus1203</p>
-      <p>
-        서울특별시 송파구 잠실에 거주하고 있습니다.
-        <br />
-        일원초등학교, 중동중학교, 세종과학고등학교를 졸업했습니다.
-        <br />
-        형제자매로는 2살 많은 형이 있습니다.
-      </p>
-    </header>
-
-    <!-- 섹션들 -->
-    <section id="club">
-      <h2>동아리</h2>
-      <h3>와플스튜디오</h3>
-      <h3>피치 Pitch</h3>
-      <h3>GIV 국제자원봉사동아리</h3>
-      <h3>얄라셩</h3>
-    </section>
-
-    <section id="hobby">
-      <h2>취미</h2>
-    </section>
-
-    <section id="favorites">
-      <h2>좋아하는 것들</h2>
-      <h3>영화 & 시리즈</h3>
-      <h3>음악</h3>
-      <h3>음식</h3>
-    </section>
-
-    <section id="career">
-      <h2>진로 및 관심사</h2>
-    </section>
-
+    <main>
+      <section id="introduction">
+        <h1>소개</h1>
+        <p style="font-weight: 600">김동현 | Donghyun Kim</p>
+        <p style="font-weight: 600">서울대학교 전기·정보공학부 25학번</p>
+        <div class="icon-row tooltip">
+          <span
+            title="luciok1203@snu.ac.kr"
+            id="email"
+            class="hover-up"
+            style="color: #0ba6df"
+            ><i class="fa-regular fa-envelope"></i
+          ></span>
+          <!-- <span id="email-tooltip" class="tooltiptext"
+            >luciok1203@snu.ac.kr</span
+          > -->
+          <a
+            title="https://github.com/luciok1203"
+            href="https://github.com/luciok1203"
+            id="github"
+            class="hover-up"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            title="https://www.instagram.com/ehdgus1203"
+            href="https://www.instagram.com/ehdgus1203"
+            id="instagram"
+            class="hover-up"
+            target="_blank"
+            style="color: #f00474"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <p>
+          서울특별시 송파구에 거주하고 있습니다.
+          <br />
+          일원초등학교, 중동중학교, 세종과학고등학교를 졸업했습니다.
+          <br />
+          형제자매로는 2살 많은 형이 있습니다.
+        </p>
+      </section>
+      <hr />
+      <section id="club">
+        <h1>동아리</h1>
+        <h2>🧇 와플스튜디오</h2>
+        <h2>🍑 피치 Pitch</h2>
+        <h2>🌷 GIV 국제자원봉사동아리</h2>
+        <h2>📽️ 얄라셩</h2>
+      </section>
+      <hr />
+      <section id="hobby">
+        <h1>취미</h1>
+      </section>
+      <hr />
+      <section id="favorites">
+        <h1>취향</h1>
+        <h2>영화 & 시리즈</h2>
+        <h2>음악</h2>
+      </section>
+      <hr />
+      <section id="career">
+        <h1>진로 및 관심사</h1>
+      </section>
+    </main>
     <!-- 플로팅 버튼 -->
-    <button id="scrollTopBtn" class="show">↑</button>
+    <button id="scrollTopBtn" class="show">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
     <script src="index.js"></script>
   </body>

@@ -3,4 +3,4 @@
 나를 소개하는 웹사이트 만들기
 </h1>
 
-## [웹사이트 바로가기](https://dhkim-website.vercel.app/)
+<h2><a href="https://dhkim-website.vercel.app/" target="_blank">웹사이트 바로가기</a></h2>
