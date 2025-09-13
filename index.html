@@ -14,7 +14,7 @@
   <body>
     <!-- 네비게이션 바 -->
     <nav class="navbar">
-      <div id="logo">김동현의 웹페이지</div>
+      <div id="logo">저를 소개합니다</div>
       <ul class="nav-links SMN_effect-24">
         <li>
           <a href="#introduction"><span>소개</span></a>
@@ -26,9 +26,6 @@
           <a href="#hobby"><span>취미</span></a>
         </li>
         <li>
-          <a href="#favorites"><span>취향</span></a>
-        </li>
-        <li>
           <a href="#career"><span>진로 및 관심사</span></a>
         </li>
       </ul>
@@ -36,19 +33,21 @@
     <main>
       <section id="introduction">
         <h1>소개</h1>
-        <p style="font-weight: 600">김동현 | Donghyun Kim</p>
-        <p style="font-weight: 600">서울대학교 전기·정보공학부 25학번</p>
-        <div class="icon-row tooltip">
-          <span
-            title="luciok1203@snu.ac.kr"
-            id="email"
-            class="hover-up"
-            style="color: #0ba6df"
-            ><i class="fa-regular fa-envelope"></i
-          ></span>
-          <!-- <span id="email-tooltip" class="tooltiptext"
-            >luciok1203@snu.ac.kr</span
-          > -->
+        <p><b>김동현 | Donghyun Kim</b></p>
+        <p><b>서울대학교 전기·정보공학부 25학번</b></p>
+        <div class="icon-row">
+          <div class="tooltip-container">
+            <span
+              title="luciok1203@snu.ac.kr"
+              id="email"
+              class="hover-up"
+              style="color: #0ba6df"
+              ><i class="fa-regular fa-envelope"></i
+            ></span>
+            <div id="email-tooltip" class="tooltip">
+              <span class="tooltip-text">Copied!</span>
+            </div>
+          </div>
           <a
             title="https://github.com/luciok1203"
             href="https://github.com/luciok1203"
@@ -79,23 +78,83 @@
       <section id="club">
         <h1>동아리</h1>
         <h2>🧇 와플스튜디오</h2>
+        <p>
+          와플스튜디오는 서울대학교 컴퓨터공학부 소속 개발 동아리입니다.<br />
+          와플스튜디오가 개발한 앱으로는 대표적으로 학식 메뉴를 알려주는
+          <b>식샤</b>와<br />시간표 앱 <b>SNUTT</b>가 있습니다.<br />2025년
+          2학기부터 Rookie로 시작하여 프론트엔드(리액트) 세미나를 수강하고
+          있습니다.
+        </p>
         <h2>🍑 피치 Pitch</h2>
+        <p>
+          피치는 서울대학교 첨단융합학부 소속 밴드 동아리입니다.<br />첨단융합학부가
+          신설 학부여서 동아리의 역사가 2년도 되지 않는데,<br />그래서인지
+          분위기가 젊고 자유롭습니다.<br />저는 2025년 1학기부터 베이스 세션을
+          맡고 있고, 2025년 7월 공연에 참여했습니다.
+        </p>
         <h2>🌷 GIV 국제자원봉사동아리</h2>
+        <p>
+          GIV는 서울대학교 중앙 봉사 동아리입니다.<br />매월 다양한 봉사활동을
+          하고 방학마다 국내와 해외 여러 초등학교에 교육 봉사를 갑니다.<br />저는
+          2025년 1학기에 들어와서 평창 농촌 봉사를 한 번 갔다 왔는데, 정말
+          행복한 시간이었습니다. 2025년 2학기에는 더욱 열심히 참여할 생각입니다.
+        </p>
         <h2>📽️ 얄라셩</h2>
+        <p>
+          얄라셩은 서울대학교 중앙 영화 동아리입니다. <br />매월 주제를 정하고
+          주제와 관련된 정기 영감회가 동방에서 열리고, 이외에도 자유롭게 게릴라
+          영감회, 외부 영감회를 열 수 있습니다.<br />원하는 사람들은 영화를 직접
+          제작해보기도 합니다.
+        </p>
       </section>
       <hr />
       <section id="hobby">
         <h1>취미</h1>
-      </section>
-      <hr />
-      <section id="favorites">
-        <h1>취향</h1>
-        <h2>영화 & 시리즈</h2>
-        <h2>음악</h2>
+        <p>
+          음악 듣는 것, 영화나 드라마 보는 것 좋아합니다.<br />
+          요즘 가장 많이 듣는 노래는 저스틴 비버의
+          <b>Speed Demon</b>이고, <br />최근에 가장 재밌게 본 작품은 한국 드라마
+          <b>미지의 서울</b>입니다. <br /><br />
+          가끔 산책하거나 자전거 타는 것을 좋아하고, 자주는 못하지만 여행하는
+          것을 좋아합니다.<br />마지막으로 한 여행은 여름방학에 가족과 함께한
+          미국여행인데, 너무 좋은 시간이었습니다.
+        </p>
+        <h2>가장 좋아하는 앨범</h2>
+        <div id="fav-albums">
+          <img
+            src="https://i.scdn.co/image/ab67616d0000b273a958d093e94944dd0e7258b2"
+            alt="Justin Bieber - SWAG II"
+          />
+          <img
+            src="https://i.scdn.co/image/ab67616d0000b273a91c10fe9472d9bd89802e5a"
+            alt="Olivia Rodrigo - SOUR"
+          />
+          <img
+            src="https://i.scdn.co/image/ab67616d0000b273986dfa533f49bb3968bd8067"
+            alt="염따 - 살아숨셔 4"
+          />
+          <img
+            src="https://i.scdn.co/image/ab67616d0000b2738da3fa71d1d3d755497e590f"
+            alt="씨잼 - 킁"
+          />
+          <img
+            src="https://i.scdn.co/image/ab67616d0000b273e5615d20fd403ca23486430a"
+            alt="장기하와 얼굴들 - mono"
+          />
+          <img
+            src="https://i.scdn.co/image/ab67616d0000b2736b0b72f94905f2321564a20f"
+            alt="혁오 - 23"
+          />
+        </div>
       </section>
       <hr />
       <section id="career">
         <h1>진로 및 관심사</h1>
+        <p>
+          AI와 머신러닝, 특히 메디컬 AI에 관심이 있습니다.<br />관련된 논문을
+          읽어보는 등 공부해보려 했는데 아직은 좀 어려운 단계입니다.<br />암과
+          같은 질병을 진단하고 치료하는 AI 기술을 개발하고픈 꿈이 있습니다.
+        </p>
       </section>
     </main>
     <!-- 플로팅 버튼 -->

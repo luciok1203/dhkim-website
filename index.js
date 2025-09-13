@@ -20,7 +20,7 @@ scrollTopBtn.addEventListener("click", () => {
 });
 
 const emailIcon = document.getElementById("email");
-const tooltip = document.getElementById("email-tooltip");
+const emailTooltip = document.getElementById("email-tooltip");
 const EMAIL = "luciok1203@snu.ac.kr";
 
 emailIcon.addEventListener("click", async () => {
@@ -29,6 +29,6 @@ emailIcon.addEventListener("click", async () => {
   } catch (err) {
     console.error("복사 실패:", err);
   }
-  tooltip.classList.add("show");
-  setTimeout(() => tooltip.classList.remove("show"), 1000); // 1초 뒤 숨김
+  emailTooltip.classList.add("show");
+  setTimeout(() => emailTooltip.classList.remove("show"), 1000); // 1초 뒤 숨김
 });
